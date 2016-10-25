@@ -31,7 +31,7 @@ public class Cell {
 	}
 
 	private enum CellType {
-		EMPTY,SNAKE_PART;
+		EMPTY,SNAKE_PART,SNAKE_HEAD;
 	}
 
 	public void markEmpty() {
@@ -40,8 +40,11 @@ public class Cell {
 	}
 
 	public void markSnakePart() {
-		this.cellType = CellType.SNAKE_PART;
-		
+		this.cellType = CellType.SNAKE_PART;		
+	}
+
+	public void markSnakeHead() {
+		this.cellType = CellType.SNAKE_HEAD;		
 	}
 
 	public void setFood(Food providedFood) {
@@ -56,8 +59,14 @@ public class Cell {
 		return this.cellType == CellType.SNAKE_PART;
 	}
 
+	public boolean isSnakeHead() {
+		return this.cellType == CellType.SNAKE_HEAD;
+	}
+
+
 	@Override
 	public String toString() {
 		return "Cell [position=" + position + ", food=" + food + ", cellType=" + cellType + "]";
 	}
+
 }

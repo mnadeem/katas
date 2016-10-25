@@ -16,13 +16,13 @@ public class Snake {
 		this.head = initPosition;
 		this.body = new LinkedList<Cell>();
 		this.body.add(initPosition);
-		initPosition.markSnakePart();
+		initPosition.markSnakeHead();
 	}
 
 	public void grow(final Cell nextCell) { 
 		this.head = nextCell;
 		this.body.addLast(nextCell);
-		nextCell.markSnakePart();
+		nextCell.markSnakeHead();
 		nextCell.setFood(null);		
 	}
 
@@ -30,8 +30,15 @@ public class Snake {
 		Cell tail = this.body.removeLast();
 		tail.markEmpty();
 		this.head = nextPosition;
+		markBodyAsPart();
 		this.body.addFirst(this.head);
-		this.head.markSnakePart();		
+		this.head.markSnakeHead();	
+	}
+
+	private void markBodyAsPart() {
+		for (Cell cell : this.body) {
+			cell.markSnakePart();
+		}
 	}
 
 	public boolean crashWithIteself(final Cell nextPosition) {

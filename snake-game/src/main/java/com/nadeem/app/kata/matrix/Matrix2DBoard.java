@@ -68,6 +68,11 @@ public class Matrix2DBoard extends Board {
 			int row = (int) (Math.random() * rows);
 	        int column = (int) (Math.random() * cols);
 			Cell cell = get(row, column);
+			if (!cell.isEmpty()) {
+				row = (int) (Math.random() * rows);
+		        column = (int) (Math.random() * cols);
+				cell = get(row, column);
+			}
 			return cell;
 		}
 

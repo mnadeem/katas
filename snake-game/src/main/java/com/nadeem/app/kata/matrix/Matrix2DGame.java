@@ -45,8 +45,10 @@ public class Matrix2DGame extends Game {
 				result.append(cell.getFood().getSymbol()) ;
 			} else if (cell.isEmpty()) {
 				result.append(" ") ;
+			} else if (cell.isSnakePart()) {
+				result.append("#") ;
 			} else {
-				result.append("#");
+				result.append("+");
 			}
 			return result.toString();
 		}
