@@ -1,5 +1,10 @@
 package com.nadeem.app.kata;
 
+/**
+ * 
+ * @author Nadeem Mohammad
+ *
+ */
 public class ConsoleConferencePrinter implements ConferencePrinter {
 
 	public void print(Conference conference) {

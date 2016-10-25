@@ -4,6 +4,11 @@ import java.util.Date;
 
 import org.junit.Test;
 
+/**
+ * 
+ * @author Nadeem Mohammad
+ *
+ */
 public class GreedyConferencePlannerTest {
 
 	@Test

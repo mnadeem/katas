@@ -2,6 +2,11 @@ package com.nadeem.app.kata;
 
 import java.util.List;
 
+/**
+ * 
+ * @author Nadeem Mohammad
+ *
+ */
 public class Game {
 
 	private List<Location> locations;

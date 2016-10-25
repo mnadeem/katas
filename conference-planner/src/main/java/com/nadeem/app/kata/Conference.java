@@ -3,6 +3,11 @@ package com.nadeem.app.kata;
 import java.util.ArrayList;
 import java.util.Collection;
 
+/**
+ * 
+ * @author Nadeem Mohammad
+ *
+ */
 public class Conference {
 
 	private final String name;

@@ -1,5 +1,10 @@
 package com.nadeem.app.kata;
 
+/**
+ * 
+ * @author Nadeem Mohammad
+ *
+ */
 public class Location {
 
 	private Position position;

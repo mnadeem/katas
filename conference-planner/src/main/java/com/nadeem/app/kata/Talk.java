@@ -1,7 +1,11 @@
 package com.nadeem.app.kata;
 
 import java.util.Date;
-
+/**
+ * 
+ * @author Nadeem Mohammad
+ *
+ */
 class Talk {
 
 	private final String name;

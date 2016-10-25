@@ -2,6 +2,11 @@ package com.nadeem.app.kata;
 
 import java.util.Date;
 
+/**
+ * 
+ * @author Nadeem Mohammad
+ *
+ */
 public class GreedyConferencePlanner {
 
 	private static final int DURATION_FOUR_HOURS = 240;

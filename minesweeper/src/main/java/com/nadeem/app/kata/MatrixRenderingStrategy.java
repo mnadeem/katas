@@ -3,6 +3,11 @@ package com.nadeem.app.kata;
 import java.util.Iterator;
 import java.util.List;
 
+/**
+ * 
+ * @author Nadeem Mohammad
+ *
+ */
 public class MatrixRenderingStrategy implements RenderingStrategy {
 	
 	private int rowCount;
