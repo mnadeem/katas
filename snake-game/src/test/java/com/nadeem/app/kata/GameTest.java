@@ -7,6 +7,8 @@ import com.nadeem.app.kata.matrix.Matrix2DGame;
 /**
  * 
  * @author Nadeem Mohammad
+ * 
+ * mvn test-compile exec:java -Dexec.mainClass="com.nadeem.app.kata.GameTest" -Dexec.classpathScope="test"
  *
  */
 public class GameTest {

@@ -5,6 +5,8 @@ Console based game demonstrating SOLID principles
 
 Here is the sample output
 
+     mvn test-compile exec:java -Dexec.mainClass="com.nadeem.app.kata.GameTest" -Dexec.classpathScope="test"
+
       Welcome to Snake game
      1.UP , 2.DOWN, 3.LEFT, 4.RIGHT
      ==========

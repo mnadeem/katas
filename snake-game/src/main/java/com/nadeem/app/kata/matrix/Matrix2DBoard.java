@@ -12,6 +12,7 @@ import com.nadeem.app.kata.Direction;
 import com.nadeem.app.kata.Position;
 import com.nadeem.app.kata.food.Apple;
 import com.nadeem.app.kata.food.Banana;
+import com.nadeem.app.kata.food.Cherry;
 import com.nadeem.app.kata.food.Food;
 import com.nadeem.app.kata.food.FoodProvider;
 
@@ -106,13 +107,16 @@ public class Matrix2DBoard extends Board {
 	private static class MatrixFoodProvider implements FoodProvider {
 
 		public Food provideFood() {
-			int max = 2;
 			int min = 1;
+			int max = 3;
 			int rn = ThreadLocalRandom.current().nextInt(min, max + 1);
 			if (rn == 1) {
 				return new Banana();
-			}
-			return new Apple();
+			} else if (rn == 2) {
+				return new Apple();
+			} else {
+				return new Cherry();
+			}			
 		}		
 	}
 }
