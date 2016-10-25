@@ -1,5 +1,6 @@
 package com.nadeem.app.kata.matrix;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
@@ -39,13 +40,13 @@ public class Matrix2DBoard extends Board {
 			for (int row = 0; row < rows; row++) {
 				for (int col = 0; col < cols; col++) {
 					Matrix2DPoint postition = new Matrix2DPoint(row, col);
-					cells.put(postition, new Cell(postition));
+					this.cells.put(postition, new Cell(postition));
 				}
 			}
 		}
 
 		public Collection<Cell> allCells() {
-			return cells.values();
+			return new ArrayList<>(this.cells.values());
 		}
 
 		public Cell getNext(Position position, Direction direction) {
@@ -82,7 +83,7 @@ public class Matrix2DBoard extends Board {
 		}		
 
 		private Cell get(int row, int column) {
-			if (row >= rows ) {
+			if (row >= rows) {
 				row = 0;
 			} else if (row < 0) {
 				row = rows - 1;
