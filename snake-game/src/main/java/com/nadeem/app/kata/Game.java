@@ -20,7 +20,7 @@ public abstract class Game {
 	public void move(final Direction direction) {
 		Cell currentPosition = snake.getHead();
 		Cell nextCell = board.getNextPosition(currentPosition, direction);
-		if (snake.crashWithIteself(nextCell)) {
+		if (snake.crashesWithItself(nextCell)) {
 			throw new GameOverException();
 		} else {	
 			if (nextCell.getFood() != null) {

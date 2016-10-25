@@ -11,9 +11,7 @@ import com.nadeem.app.kata.food.FoodProvider;
 public class MatrixFoodProvider implements FoodProvider {
 
 	public Food provideFood() {
-		int min = 1;
-		int max = 3;
-		int rn = ThreadLocalRandom.current().nextInt(min, max + 1);
+		int rn = generateRandomNumber();
 		if (rn == 1) {
 			return new Banana();
 		} else if (rn == 2) {
@@ -21,5 +19,12 @@ public class MatrixFoodProvider implements FoodProvider {
 		} else {
 			return new Cherry();
 		}			
+	}
+
+	private int generateRandomNumber() {
+		int min = 1;
+		int max = 3;
+		int rn = ThreadLocalRandom.current().nextInt(min, max + 1);
+		return rn;
 	}		
 }

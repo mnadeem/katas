@@ -41,7 +41,7 @@ public class Snake {
 		}
 	}
 
-	public boolean crashWithIteself(final Cell nextPosition) {
+	public boolean crashesWithItself(final Cell nextPosition) {
 		for (Cell position : this.body) {
 			if (position.equals(nextPosition)) {
 				return true;
