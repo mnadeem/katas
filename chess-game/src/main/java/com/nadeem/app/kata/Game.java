@@ -1,7 +1,5 @@
 package com.nadeem.app.kata;
 
-import com.nadeem.app.kata.player.Player;
-
 public class Game {
 
 	private Player playerOne;
