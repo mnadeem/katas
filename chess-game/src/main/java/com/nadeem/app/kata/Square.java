@@ -7,7 +7,7 @@ public class Square {
 	private final Position position;
 	private Piece piece;
 
-	public Square(Position position, Piece piece) {
+	public Square(final Position position, final Piece piece) {
 		this.position = position;
 		occupy(piece);
 	}

@@ -9,11 +9,12 @@ import com.nadeem.app.kata.piece.Piece;
 
 public class Board {
 
-	private boolean gameOver;
+	private boolean gameOver = false;
 	private Map<Position, Square> spots;
 	private PositionProvider positionProvider;
 
-	public Board() {
+	public Board(final PositionProvider positionProvider) {
+		this.positionProvider = positionProvider;
 		this.spots = new HashMap<Position, Square>();
 	}
 

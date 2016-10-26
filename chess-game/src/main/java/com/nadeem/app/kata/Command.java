@@ -7,7 +7,7 @@ public class Command {
 	private Piece piece;
 	private Move move;
 
-	public Command(Piece piece, Move move) {
+	public Command(final Piece piece, final Move move) {
 		this.piece = piece;
 		this.move = move;
 	}
