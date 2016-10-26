@@ -1,5 +1,5 @@
 package com.nadeem.app.kata;
 
-public enum PieceColor {
+public enum Color {
 	WHITE, BLACK;
 }

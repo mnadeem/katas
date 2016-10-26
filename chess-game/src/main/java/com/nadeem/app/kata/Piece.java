@@ -8,20 +8,20 @@ public abstract class Piece {
 	public boolean available = true;
 	private String id;
 
-	private PieceColor pieceColor;
+	private Color pieceColor;
 	private Square spot;
 
-	public Piece(final String id, PieceColor color) {
+	public Piece(final String id, Color color) {
 		this.id = id;
 		this.pieceColor = color;
 	}
 	
 	public boolean isBlack() {
-		return PieceColor.BLACK.equals(pieceColor);
+		return Color.BLACK.equals(pieceColor);
 	}
 	
 	public boolean isWhite() {
-		return PieceColor.WHITE.equals(pieceColor);
+		return Color.WHITE.equals(pieceColor);
 	}
 
 	public boolean isAvailable() {

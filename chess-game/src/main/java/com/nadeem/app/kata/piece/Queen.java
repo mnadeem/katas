@@ -1,12 +1,12 @@
 package com.nadeem.app.kata.piece;
 
 import com.nadeem.app.kata.Piece;
-import com.nadeem.app.kata.PieceColor;
+import com.nadeem.app.kata.Color;
 import com.nadeem.app.kata.Position;
 
 public class Queen extends Piece {
 
-	public Queen(String id, PieceColor color) {
+	public Queen(String id, Color color) {
 		super(id, color);
 	}
 

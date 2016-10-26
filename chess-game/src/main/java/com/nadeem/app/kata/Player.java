@@ -13,12 +13,12 @@ import com.nadeem.app.kata.piece.Rook;
 public abstract class Player {
 
 	private String name;
-	private PieceColor pieceColor;
+	private Color pieceColor;
 	private List<Piece> pieces;
 
 	public abstract Command getCommand();
 
-	public Player(String name, PieceColor pieceColor) {
+	public Player(String name, Color pieceColor) {
 		this.name = name;
 		this.pieceColor = pieceColor;
 		this.pieces = new ArrayList<Piece>();

@@ -1,12 +1,12 @@
 package com.nadeem.app.kata.player;
 
 import com.nadeem.app.kata.Command;
-import com.nadeem.app.kata.PieceColor;
+import com.nadeem.app.kata.Color;
 import com.nadeem.app.kata.Player;
 
 public class ComputerPlayer extends Player {
 
-	public ComputerPlayer(String name, PieceColor pieceColor) {
+	public ComputerPlayer(String name, Color pieceColor) {
 		super(name, pieceColor);
 	}
 
