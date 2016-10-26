@@ -7,7 +7,7 @@ public class Game {
 	private Player playerOne;
 	private Player playerTwo;
 	private Board board;
-	
+
 	public Game(final Board board) {
 		this.board = board;
 	}

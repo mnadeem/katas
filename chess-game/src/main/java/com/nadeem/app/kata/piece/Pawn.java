@@ -1,6 +1,8 @@
 package com.nadeem.app.kata.piece;
 
-import com.nadeem.app.kata.Move;
+import com.nadeem.app.kata.Piece;
+import com.nadeem.app.kata.PieceColor;
+import com.nadeem.app.kata.Position;
 
 public class Pawn extends Piece {
 
@@ -14,8 +16,7 @@ public class Pawn extends Piece {
 	}
 
 	@Override
-	public boolean validate(Move move) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean validate(Position destination) {
+		return true;
 	}
 }

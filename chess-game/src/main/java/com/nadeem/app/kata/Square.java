@@ -1,7 +1,5 @@
 package com.nadeem.app.kata;
 
-import com.nadeem.app.kata.piece.Piece;
-
 public class Square {
 
 	private final Position position;
@@ -9,16 +7,19 @@ public class Square {
 
 	public Square(final Position position, final Piece piece) {
 		this.position = position;
+		this.piece.setSpot(this);
 		occupy(piece);
 	}
-	
+
 	public void occupy(Piece piece) {
 		this.piece = piece;
+		piece.setSpot(this);
 	}
 
 	public Piece release() {
 		Piece piece = this.piece;
 		if (piece != null) {
+			piece.setSpot(null);
 			piece.setAvailable(false);
 		}
 		this.piece = null;

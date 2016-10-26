@@ -1,15 +1,15 @@
-package com.nadeem.app.kata.piece;
-
-import com.nadeem.app.kata.Move;
+package com.nadeem.app.kata;
 
 public abstract class Piece {
 
 	public abstract String getName();
-	public abstract boolean validate(Move move);
+	public abstract boolean validate(Position destination);
+
 	public boolean available = true;
 	private String id;
 
 	private PieceColor pieceColor;
+	private Square spot;
 
 	public Piece(final String id, PieceColor color) {
 		this.id = id;
@@ -34,5 +34,11 @@ public abstract class Piece {
 
 	public String getId() {
 		return id;
+	}
+	public Square getSpot() {
+		return spot;
+	}
+	public void setSpot(Square spot) {
+		this.spot = spot;
 	}
 }

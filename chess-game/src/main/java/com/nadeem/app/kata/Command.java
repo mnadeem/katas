@@ -1,21 +1,20 @@
 package com.nadeem.app.kata;
 
-import com.nadeem.app.kata.piece.Piece;
-
 public class Command {
 
 	private Piece piece;
-	private Move move;
+	private Position destination;
 
-	public Command(final Piece piece, final Move move) {
+	public Command(final Piece piece, final Position destination) {
 		this.piece = piece;
-		this.move = move;
+		this.destination = destination;
 	}
 
 	public Piece getPiece() {
 		return piece;
 	}
-	public Move getMove() {
-		return move;
+
+	public Position getDestination() {
+		return destination;
 	}
 }

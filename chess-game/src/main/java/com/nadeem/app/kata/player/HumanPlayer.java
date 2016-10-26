@@ -1,7 +1,7 @@
 package com.nadeem.app.kata.player;
 
 import com.nadeem.app.kata.Command;
-import com.nadeem.app.kata.piece.PieceColor;
+import com.nadeem.app.kata.PieceColor;
 
 public class HumanPlayer extends Player {
 

@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Map;
 
 import com.nadeem.app.kata.piece.King;
-import com.nadeem.app.kata.piece.Piece;
 
 public class Board {
 
@@ -27,12 +26,13 @@ public class Board {
 
 	public boolean execute(final Command command) {
 		Piece piece = command.getPiece();
-		Move move = command.getMove();
-		if (!piece.validate(move)) {
+		Position destination = command.getDestination();
+		if (!piece.validate(destination)) {
 			return false;
 		}
-		Square spot = getSpot(move.getSource());
+		Square spot = getSpot(command.getDestination());
 		Piece killed = spot.release();
+		spot.occupy(piece);
 		if (killed instanceof King) {
 			this.gameOver = true;
 		}

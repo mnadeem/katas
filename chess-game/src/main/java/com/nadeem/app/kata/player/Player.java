@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.nadeem.app.kata.Command;
+import com.nadeem.app.kata.Piece;
+import com.nadeem.app.kata.PieceColor;
 import com.nadeem.app.kata.piece.Bishop;
 import com.nadeem.app.kata.piece.King;
 import com.nadeem.app.kata.piece.Knight;
 import com.nadeem.app.kata.piece.Pawn;
-import com.nadeem.app.kata.piece.Piece;
-import com.nadeem.app.kata.piece.PieceColor;
 import com.nadeem.app.kata.piece.Queen;
 import com.nadeem.app.kata.piece.Rook;
 

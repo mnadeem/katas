@@ -1,6 +1,7 @@
 package com.nadeem.app.kata;
 
 public class Move {
+
 	private Position source;
 	private Position destination;
 	
@@ -16,5 +17,4 @@ public class Move {
 	public Position getDestination() {
 		return destination;
 	}
-	
 }
