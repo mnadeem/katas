@@ -4,6 +4,10 @@ import com.nadeem.app.kata.Piece;
 import com.nadeem.app.kata.Color;
 import com.nadeem.app.kata.Position;
 
+/**
+ * @author Nadeem Mohammad
+ *
+ */
 public class King extends Piece {
 
 	public King(String id, Color color) {

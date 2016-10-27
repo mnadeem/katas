@@ -1,5 +1,9 @@
 package com.nadeem.app.kata;
 
+/**
+ * @author Nadeem Mohammad
+ *
+ */
 public abstract class Piece {
 
 	public abstract String getName();

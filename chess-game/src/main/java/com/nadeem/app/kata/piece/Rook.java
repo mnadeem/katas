@@ -3,7 +3,10 @@ package com.nadeem.app.kata.piece;
 import com.nadeem.app.kata.Piece;
 import com.nadeem.app.kata.Color;
 import com.nadeem.app.kata.Position;
-
+/**
+ * @author Nadeem Mohammad
+ *
+ */
 public class Rook extends Piece {
 
 	public Rook(String id, Color color) {

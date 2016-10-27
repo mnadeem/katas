@@ -6,6 +6,10 @@ import java.util.Map;
 
 import com.nadeem.app.kata.piece.King;
 
+/**
+ * @author Nadeem Mohammad
+ *
+ */
 public class Board {
 
 	private boolean gameOver = false;
@@ -19,7 +23,7 @@ public class Board {
 
 	public void initialize(final List<Piece> pieces) {
 		for (Piece piece : pieces) {
-			Position position = this.positionProvider.provide(piece);
+			Position position = this.positionProvider.initialPosition(piece);
 			this.spots.put(position, new Square(position, piece));
 		}
 	}

@@ -4,6 +4,10 @@ import com.nadeem.app.kata.Command;
 import com.nadeem.app.kata.Color;
 import com.nadeem.app.kata.Player;
 
+/**
+ * @author Nadeem Mohammad
+ *
+ */
 public class HumanPlayer extends Player {
 
 	public HumanPlayer(String name, Color pieceColor) {
