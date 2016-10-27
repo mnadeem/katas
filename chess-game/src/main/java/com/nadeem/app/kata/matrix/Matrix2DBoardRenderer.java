@@ -16,4 +16,10 @@ public class Matrix2DBoardRenderer implements BoardRenderer {
 		
 	}
 
+	@Override
+	public void render(String message) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

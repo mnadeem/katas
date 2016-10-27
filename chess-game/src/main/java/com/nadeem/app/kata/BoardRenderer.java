@@ -9,4 +9,5 @@ import java.util.Collection;
 public interface BoardRenderer {
 
 	void render(final Collection<Square> values);
+	void render(final String message);
 }

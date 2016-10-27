@@ -52,8 +52,12 @@ public class Board {
 	public boolean gameOver() {
 		return this.gameOver;
 	}
-	
+
 	public void display() {
 		this.renderer.render(spots.values());
+	}
+
+	public void displayMessage(String message) {
+		this.renderer.render(message);
 	}
 }

@@ -30,12 +30,12 @@ public class Game {
 		while(true) {
 			processTurn(this.playerOne);
 			if (board.gameOver()) {
-				System.out.println(this.playerOne.getName() + " Wins!");
+				this.board.displayMessage(this.playerOne.getName() + " Wins!");
 				break;
 			}
 			processTurn(playerTwo);
 			if (board.gameOver()) {
-				System.out.println(this.playerTwo.getName() + " Wins!");
+				this.board.displayMessage(this.playerTwo.getName() + " Wins!");
 				break;
 			}
 		}
