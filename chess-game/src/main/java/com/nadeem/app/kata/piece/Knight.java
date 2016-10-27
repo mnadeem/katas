@@ -9,7 +9,7 @@ import com.nadeem.app.kata.Position;
  */
 public class Knight extends Piece {
 
-	public Knight(String id, Color color) {
+	public Knight(int id, Color color) {
 		super(id, color);
 	}
 

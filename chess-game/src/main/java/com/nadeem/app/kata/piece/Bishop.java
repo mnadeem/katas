@@ -10,7 +10,7 @@ import com.nadeem.app.kata.Position;
  */
 public class Bishop extends Piece {
 
-	public Bishop(String id, Color color) {
+	public Bishop(int id, Color color) {
 		super(id, color);
 	}
 

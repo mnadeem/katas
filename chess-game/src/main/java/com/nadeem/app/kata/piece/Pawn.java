@@ -9,7 +9,7 @@ import com.nadeem.app.kata.Position;
  */
 public class Pawn extends Piece {
 
-	public Pawn(String id, Color color) {
+	public Pawn(int id, Color color) {
 		super(id, color);
 	}
 

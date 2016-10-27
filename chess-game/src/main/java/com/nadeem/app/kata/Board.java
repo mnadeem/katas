@@ -15,9 +15,11 @@ public class Board {
 	private boolean gameOver = false;
 	private Map<Position, Square> spots;
 	private PositionProvider positionProvider;
+	private BoardRenderer renderer;
 
-	public Board(final PositionProvider positionProvider) {
+	public Board(final PositionProvider positionProvider, final BoardRenderer renderer) {
 		this.positionProvider = positionProvider;
+		this.renderer = renderer;
 		this.spots = new HashMap<Position, Square>();
 	}
 
@@ -49,5 +51,9 @@ public class Board {
 
 	public boolean gameOver() {
 		return this.gameOver;
+	}
+	
+	public void display() {
+		this.renderer.render(spots.values());
 	}
 }

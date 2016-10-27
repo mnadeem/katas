@@ -9,7 +9,7 @@ import com.nadeem.app.kata.Position;
  */
 public class Queen extends Piece {
 
-	public Queen(String id, Color color) {
+	public Queen(int id, Color color) {
 		super(id, color);
 	}
 

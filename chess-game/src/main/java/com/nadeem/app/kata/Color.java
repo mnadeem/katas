@@ -5,5 +5,14 @@ package com.nadeem.app.kata;
  *
  */
 public enum Color {
-	WHITE, BLACK;
+	WHITE('W'), BLACK('B');
+
+	private char code;
+	private Color(char code) {
+		this.code = code;
+	}
+
+	public char getCode() {
+		return code;
+	}
 }

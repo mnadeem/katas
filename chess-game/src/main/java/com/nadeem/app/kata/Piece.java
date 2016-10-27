@@ -10,16 +10,20 @@ public abstract class Piece {
 	public abstract boolean validate(Position destination);
 
 	public boolean available = true;
-	private String id;
+	private int id;
 
 	private Color pieceColor;
 	private Square spot;
 
-	public Piece(final String id, Color color) {
+	public Piece(final int id, Color color) {
 		this.id = id;
-		this.pieceColor = color;
+		this.pieceColor = color;		
 	}
-	
+
+	public String getSymbol() {
+		return this.pieceColor.getCode() + getName().substring(0, 1);
+	}
+
 	public boolean isBlack() {
 		return Color.BLACK.equals(pieceColor);
 	}
@@ -36,7 +40,7 @@ public abstract class Piece {
 		this.available = available;
 	}
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 	public Square getSpot() {

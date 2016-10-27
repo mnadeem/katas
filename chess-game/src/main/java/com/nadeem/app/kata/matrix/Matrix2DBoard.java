@@ -9,6 +9,6 @@ import com.nadeem.app.kata.Board;
 public class Matrix2DBoard extends Board {
 
 	public Matrix2DBoard() {
-		super(new Matrix2DPositionProvider());
+		super(new Matrix2DPositionProvider(), new Matrix2DBoardRenderer());
 	}
 }
