@@ -46,9 +46,9 @@ public class MarsRoverTest {
         Coordinates initialPosition = new Coordinates(2, 2);
 
         MarsRover marsRover = new MarsRover(plateau, initialPosition, Direction.EAST);
-        marsRover.execute("MMMR");
+        marsRover.execute("MMMRL");
 
-        assertThat(marsRover.getCurrentPosition(), equalTo("5 2 S"));
+        assertThat(marsRover.getCurrentPosition(), equalTo("5 2 E"));
 	}
 
 }
