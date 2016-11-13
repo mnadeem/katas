@@ -14,21 +14,21 @@ public abstract class Game {
 	public Game(final Board board, final CellRenderer cellRenderer) {
 		this.board = board;
 		this.cellRenderer = cellRenderer;
-		this.snake = new Snake(board.getSnakePosition());
+		this.snake = new Snake(board.getSnakeInitialPosition());
 	}
 
 	public void move(final Direction direction) {
-		Cell currentPosition = snake.getHead();
-		Cell nextCell = board.getNextPosition(currentPosition, direction);
+		Cell currentPosition = this.snake.getHead();
+		Cell nextCell = this.board.getNextPosition(currentPosition, direction);
 		if (snake.crashesWithItself(nextCell)) {
 			throw new GameOverException();
 		} else {	
 			if (nextCell.getFood() != null) {
 				Counter.getInstance().incrementScoreBy(nextCell.getFood().getBonus());
-				snake.grow(nextCell);
-				board.generateFood();
+				this.snake.grow(nextCell);
+				this.board.generateFood();
 			}
-			snake.move(nextCell);
+			this.snake.move(nextCell);
 		}
 	}
 

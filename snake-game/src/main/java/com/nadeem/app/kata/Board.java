@@ -21,20 +21,20 @@ public class Board {
 	}
 
 	public Cell getNextPosition(final Cell currentPosition, final Direction direction) {
-		return cellProvider.getNext(currentPosition.getPosition(), direction);
+		return this.cellProvider.getNext(currentPosition.getPosition(), direction);
 	}
 
 	public void generateFood() {
-		Cell foodCell = cellProvider.provideFoodCell();
-		foodCell.setFood(foodProvider.provideFood());
+		Cell foodCell = this.cellProvider.provideFoodCell();
+		foodCell.setFood(this.foodProvider.provideFood());
 	}
 
 	public Collection<Cell> allCells() {
-		return cellProvider.allCells();
+		return this.cellProvider.allCells();
 	}
 
-	public Cell getSnakePosition() {
-		return cellProvider.getSnakeInitialPosition();
+	public Cell getSnakeInitialPosition() {
+		return this.cellProvider.getSnakeInitialPosition();
 	}
 
 	public void display(final CellRenderer cellRenderer) {
